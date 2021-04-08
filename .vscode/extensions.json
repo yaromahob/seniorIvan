@@ -1,0 +1,11 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker-russian",
+    "coenraads.bracket-pair-colorizer",
+    "ritwickdey.liveserver",
+    "ms-vsliveshare.vsliveshare",
+    "techer.open-in-browser",
+    "vscode-icons-team.vscode-icons"
+  ]
+}
