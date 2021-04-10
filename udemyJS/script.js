@@ -1,30 +1,35 @@
-console.log("5 % 2", 5 % 2);
-console.log("8 % 3", 8 % 3);
-let i = 1;
-//i = i + 1;
-i++;
-console.log("i", i);
+let carName = "Ford";
+let carYear = 2010;
+let personYear = 1990;
 
-// Cаша
-// код
-// ваш
-// шатал
+function calculateAge(year) {
+  let currentYear = 2018;
+  let result = currentYear - year;
+  return result;
+}
 
-/* 
-Саша
-код
-Ваш
-расшатал
-*/
+function checkAndLogAge(year, name, compareTo) {
+  if (calculateAge(year) < compareTo) {
+    console.log("Возраст " + name + " меньше " + compareTo + " лет");
+  } else {
+    console.log("Возраст " + name + " больше " + compareTo + " лет");
+  }
+}
 
-/*
+checkAndLogAge(carYear, "машины", 8);
+checkAndLogAge(personYear, "человека", 30);
 
-Number - 123
-
-String - 'string'
-
-Boolean - true(1) folse(0)
-
-Null - 
-
-*/
+// let carColor = prompt("Какой цвет машины?");
+// switch (carColor) {
+//   case "green":
+//     console.log("Цвет машины зеленый");
+//     break;
+//   case "yellow":
+//     console.log("Цвет машины желтый");
+//     break;
+//   case "red":
+//     console.log("Цвет машины красный");
+//     break;
+//   default:
+//     console.log("Цвет машины не определен");
+// }
