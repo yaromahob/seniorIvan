@@ -1,19 +1,22 @@
-console.log(42);
-console.log(-42);
-console.log(1.5);
-console.log(-8 / 3);
-console.log(0xab);
-console.log(2e3);
-console.log(NaN);
-console.log(typeof NaN);
-console.log(123 / 0);
-let fortyTwo = 42;
-console.log(fortyTwo.toString());
-let delta = 8 / 3;
-console.log(+delta.toFixed(1) + 4); //оставляет нужное колво знаков после запятой
-console.log(parseFloat(delta.toFixed(2))); //парсит число и выдает результат с учетой десятичных частей
-console.log(parseInt(delta.toFixed(2))); //работает только с целыми числами
-console.log(isNaN(NaN));
-console.log(isNaN(44)); //проверка валидности числа
-console.log(isFinite(1 / 0));
-console.log(isFinite(999999999999));
+//Массивы
+let cars = ["Ford", "Mazda", "Kia", "BMW"];
+
+console.log(cars);
+console.log(cars[1]);
+
+console.log(cars.length);
+cars.push("Audi"); //добавить элемент в конец
+console.log(cars);
+let lastElement = cars.pop(); //удаляет и возращает последний элемент
+
+console.log(cars, lastElement);
+//
+let firstElement = cars.shift(); //удаляет и возращает первый элемент
+
+console.log(firstElement, cars, lastElement);
+cars.unshift(lastElement); //добавляет в начало
+console.log(cars);
+console.log(cars.indexOf("Kia")); //Важен регистр букв!!!
+let index = cars.indexOf("Kia");
+let kia = cars[index];
+console.log(kia);
