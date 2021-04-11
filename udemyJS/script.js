@@ -1,35 +1,21 @@
-let carName = "Ford";
-let carYear = 2010;
-let personYear = 1990;
+let str1 = "hello world";
+let str2 = "hello world 2";
 
-function calculateAge(year) {
-  let currentYear = 2018;
-  let result = currentYear - year;
-  return result;
-}
+let personName = "Виктор";
 
-function checkAndLogAge(year, name, compareTo) {
-  if (calculateAge(year) < compareTo) {
-    console.log("Возраст " + name + " меньше " + compareTo + " лет");
-  } else {
-    console.log("Возраст " + name + " больше " + compareTo + " лет");
-  }
-}
+let message = 'Человека зовут "' + personName + '"';
+let message2 = "Человека зовут '" + personName + "'";
 
-checkAndLogAge(carYear, "машины", 8);
-checkAndLogAge(personYear, "человека", 30);
+console.log(message2);
 
-// let carColor = prompt("Какой цвет машины?");
-// switch (carColor) {
-//   case "green":
-//     console.log("Цвет машины зеленый");
-//     break;
-//   case "yellow":
-//     console.log("Цвет машины желтый");
-//     break;
-//   case "red":
-//     console.log("Цвет машины красный");
-//     break;
-//   default:
-//     console.log("Цвет машины не определен");
-// }
+let newMessage = "Hello World!!!";
+
+console.log(newMessage);
+console.log(newMessage.length); //считает кол-во символов в "объекте"
+console.log(newMessage.toUpperCase()); //присваивает всей строке верхний регистр
+console.log(newMessage.toLocaleLowerCase()); //присваивает всей строке нижний регистр
+console.log(newMessage.charAt(1)); //вызывает символ строки(указывавется в скобках)
+console.log(newMessage.indexOf("World")); //поиск позиции слова в строке(указать слово в скобках)
+console.log(newMessage.substr(1, 4));
+console.log(newMessage.substr(newMessage.indexOf("World"), 5));
+console.log(newMessage.substring(1, 3));
