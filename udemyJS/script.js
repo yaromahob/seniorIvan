@@ -1,22 +1,16 @@
-//Массивы
-let cars = ["Ford", "Mazda", "Kia", "BMW"];
-
-console.log(cars);
-console.log(cars[1]);
-
-console.log(cars.length);
-cars.push("Audi"); //добавить элемент в конец
-console.log(cars);
-let lastElement = cars.pop(); //удаляет и возращает последний элемент
-
-console.log(cars, lastElement);
-//
-let firstElement = cars.shift(); //удаляет и возращает первый элемент
-
-console.log(firstElement, cars, lastElement);
-cars.unshift(lastElement); //добавляет в начало
-console.log(cars);
-console.log(cars.indexOf("Kia")); //Важен регистр букв!!!
-let index = cars.indexOf("Kia");
-let kia = cars[index];
-console.log(kia);
+// let div = document.getElementById("playground");
+// let p = document.getElementsByClassName("text");
+// let h1 = document.getElementsByTagName("h1");
+// console.log(div);
+// console.log(p);
+// console.log(h1);
+let div = document.querySelector("#playground");
+let p = document.querySelectorAll(".text");
+let h1 = document.querySelector("h1");
+let input = document.querySelector("input");
+div.innerHTML = '<h2 style="color: red;">From javascript</h2>';
+h1.textContent = "Change from JS";
+console.log(input.value);
+console.log(div.innerHTML);
+console.log(p);
+console.log(h1.textContent);
