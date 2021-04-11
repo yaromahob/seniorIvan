@@ -1,21 +1,19 @@
-let str1 = "hello world";
-let str2 = "hello world 2";
-
-let personName = "Виктор";
-
-let message = 'Человека зовут "' + personName + '"';
-let message2 = "Человека зовут '" + personName + "'";
-
-console.log(message2);
-
-let newMessage = "Hello World!!!";
-
-console.log(newMessage);
-console.log(newMessage.length); //считает кол-во символов в "объекте"
-console.log(newMessage.toUpperCase()); //присваивает всей строке верхний регистр
-console.log(newMessage.toLocaleLowerCase()); //присваивает всей строке нижний регистр
-console.log(newMessage.charAt(1)); //вызывает символ строки(указывавется в скобках)
-console.log(newMessage.indexOf("World")); //поиск позиции слова в строке(указать слово в скобках)
-console.log(newMessage.substr(1, 4));
-console.log(newMessage.substr(newMessage.indexOf("World"), 5));
-console.log(newMessage.substring(1, 3));
+console.log(42);
+console.log(-42);
+console.log(1.5);
+console.log(-8 / 3);
+console.log(0xab);
+console.log(2e3);
+console.log(NaN);
+console.log(typeof NaN);
+console.log(123 / 0);
+let fortyTwo = 42;
+console.log(fortyTwo.toString());
+let delta = 8 / 3;
+console.log(+delta.toFixed(1) + 4); //оставляет нужное колво знаков после запятой
+console.log(parseFloat(delta.toFixed(2))); //парсит число и выдает результат с учетой десятичных частей
+console.log(parseInt(delta.toFixed(2))); //работает только с целыми числами
+console.log(isNaN(NaN));
+console.log(isNaN(44)); //проверка валидности числа
+console.log(isFinite(1 / 0));
+console.log(isFinite(999999999999));
