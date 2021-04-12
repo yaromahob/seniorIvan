@@ -1,16 +1,17 @@
-// let div = document.getElementById("playground");
-// let p = document.getElementsByClassName("text");
-// let h1 = document.getElementsByTagName("h1");
-// console.log(div);
-// console.log(p);
-// console.log(h1);
-let div = document.querySelector("#playground");
-let p = document.querySelectorAll(".text");
-let h1 = document.querySelector("h1");
-let input = document.querySelector("input");
-div.innerHTML = '<h2 style="color: red;">From javascript</h2>';
-h1.textContent = "Change from JS";
-console.log(input.value);
-console.log(div.innerHTML);
-console.log(p);
-console.log(h1.textContent);
+// let p = document.querySelectorAll("p");
+// for (let i = 0; i < p.length; i++) {
+//   p[i].addEventListener("click", function (event) {
+//     event.target.style.color = "blue";
+//   });
+// }
+document.getElementById("wrapper").addEventListener("click", function (event) {
+  let tagName = event.target.tagName.toLowerCase();
+
+  if (tagName === "p") {
+    event.target.style.color = "blue";
+  }
+
+  if (event.target.classList.contains("color")) {
+    event.target.style.color = "red";
+  }
+});
